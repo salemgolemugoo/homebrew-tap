@@ -5,21 +5,21 @@
 class Tgsort < Formula
   desc "Sort blocks and attributes in Terragrunt HCL files"
   homepage "https://github.com/salemgolemugoo/tgsort"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.1/tgsort_0.3.1_darwin_amd64.tar.gz"
-      sha256 "6c9940c7137b3cdb2037712dd3b8c97c7dca8695db69938d1db90c9fe8fca1b5"
+      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.2/tgsort_0.3.2_darwin_amd64.tar.gz"
+      sha256 "0828d42ee88f06ab7bbcca77854f7ca92c91ab7f6b2a45da60cdcf68370fc5de"
 
       define_method(:install) do
         bin.install "tgsort"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.1/tgsort_0.3.1_darwin_arm64.tar.gz"
-      sha256 "d7f698d5d6e03c79204917847c10dbec4e380f95328e2738ba86ceaaa84f3c30"
+      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.2/tgsort_0.3.2_darwin_arm64.tar.gz"
+      sha256 "4ba25c632f42e7a7c40d7bc3903a6c7022b1b5daec0e666febcce6108f4f0e43"
 
       define_method(:install) do
         bin.install "tgsort"
@@ -29,15 +29,15 @@ class Tgsort < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.1/tgsort_0.3.1_linux_amd64.tar.gz"
-      sha256 "18c5b576eecc6ceebc99fbdc70d91b096e0587c9a4933fbe2239f747fde10088"
+      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.2/tgsort_0.3.2_linux_amd64.tar.gz"
+      sha256 "502cdfb0b90c8787f2a298dcae14d4b649106a8be5e54c93531afcf3ddad995f"
       define_method(:install) do
         bin.install "tgsort"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.1/tgsort_0.3.1_linux_arm64.tar.gz"
-      sha256 "3b334a23b5b40b4b8506c2efca897ed0caf6ad79cf48b55d085cf2e01b5fcbb6"
+      url "https://github.com/salemgolemugoo/tgsort/releases/download/v0.3.2/tgsort_0.3.2_linux_arm64.tar.gz"
+      sha256 "866afafe03d4e11628071a8159ba5616d7b9643686050a221bdb243a21ec7283"
       define_method(:install) do
         bin.install "tgsort"
       end
